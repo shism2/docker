@@ -14,7 +14,7 @@ let
       aarch64-linux = pkgs.pkgsCross.aarch64-multiplatform;
       armv7l-linux = pkgs.pkgsCross.armv7l-hf-multiplatform.system;
       x86_64-linux = pkgs.pkgsCross.gnu64;
-
+      powerpc64le-linux = pkgs.pkgsCross.musl-power;
       i686-linux = pkgs.pkgsCross.gnu32;
     }.${crossSystem}
     else pkgs;
